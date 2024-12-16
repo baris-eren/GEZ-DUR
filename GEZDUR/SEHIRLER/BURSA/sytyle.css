@@ -1,0 +1,66 @@
+body {
+    display: flex;
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.sol {
+    align-items: center;
+    flex: 1;
+    position: center;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.5)), url("https://w0.peakpx.com/wallpaper/990/544/HD-wallpaper-tophane-bursa-ozhan.jpg");
+    background-position: center;
+}
+
+.sag {
+    align-items: center;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    padding: 30px;
+    
+}
+
+.kaydir {
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 sütun */
+    gap: 150px; /* Fotoğraflar arasında boşluk */
+    margin-top: 20px;
+}
+
+.kaydir div {
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    text-align: center; /* İçeriği ortalamak için */
+}
+
+.kaydir img {
+    margin-top: 25px;
+    width: 100%;
+    height: auto;
+}
+
+svg {
+    width: 95%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+    border-radius: 10px;
+  }
+  
+  .city {
+    cursor: pointer;
+    transition: transform 0.3s ease, fill 0.3s ease;
+    fill: white;
+  }
+  
+  .city:hover {
+    transform: scale(1.1);
+    fill: gray; /* Hover color change */
+    stroke: white; /* Add white stroke to hovered city */
+    stroke-width: 2; /* Define stroke width */
+  }

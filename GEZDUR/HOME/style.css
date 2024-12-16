@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Titillium Web", sans-serif;
+  text-decoration: none;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin-top: 15px;
+  background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.5)), url("https://images.unsplash.com/photo-1697438167040-ccfd469c40f2?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8c2luZ2Fwb3JlJTIwY2l0eXxlbnwwfHwwfHx8MA%3D%3D");
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  color: white;
+}
+
+.container {
+  padding-left: 8%;
+  padding-right: 8%;
+  min-height: 50vh;
+  padding-top: 25px;
+}
+
+.navbar {
+  height: 10%; /* Slightly reduced height */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.8); /* Darker background */
+  padding: 15px 30px; /* Adjusted padding */
+  border-bottom: 2px solid white;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+li {
+  display: inline-block;
+}
+
+a {
+  color: white;
+  padding: 8px 16px;
+  font-size: 16px;
+  text-transform: uppercase;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+a:hover {
+  color: rgb(101, 101, 211); /* Color change on hover */
+  transform: scale(1.1);
+}
+
+.row {
+  padding-top: 50px;
+}
+
+svg {
+  width: 95%;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+  border-radius: 10px;
+}
+
+.city {
+  cursor: pointer;
+  transition: transform 0.3s ease, fill 0.3s ease;
+  fill: rgb(209, 24, 24);
+}
+
+.city:hover {
+  transform: scale(1.1);
+  fill: rgb(32, 69, 139); /* Hover color change */
+  stroke: white; /* Add white stroke to hovered city */
+  stroke-width: 2; /* Define stroke width */
+}
+
+        /* Gizli sidebar */
+        .sidebar {
+          height: 100%;
+          width: 0;
+          position: fixed;
+          top: 0;
+          left: 0;
+          background-color: #111;
+          overflow-x: hidden;
+          transition: 0.5s;
+          padding-top: 60px;
+      }
+
+      .sidebar a {
+          padding: 10px 15px;
+          text-decoration: none;
+          font-size: 18px;
+          color: white;
+          display: block;
+          transition: 0.3s;
+      }
+
+      .sidebar a:hover {
+          background-color: #575757;
+      }
+
+      .sidebar .close-btn {
+          position: absolute;
+          top: 0;
+          right: 25px;
+          font-size: 36px;
+          margin-left: 50px;
+      }
